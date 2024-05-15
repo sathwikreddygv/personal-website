@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,7 +14,18 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
+
+:root {
+	/* Your default theme */
+	--background: white;
+	--foreground: black;
+  }
+  
+  [data-theme='dark'] {
+	--background: black;
+	--foreground: white;
+  }
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +41,48 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.cp{
+	cursor: pointer;
+}
+
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		top: 93vh;
+		width: 100vw;
+		font-size: 20px;
+	}
+	to {
+		top: 4;
+		width: 40vw;
+		font-size: 14px;
+	}
+}
+
+#sticky-parallax-header {
+	position: fixed;
+	top: 0;
+
+	animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
+}
+
+#scroll-icon {
+	animation: scroll-icon 1.8s ease infinite;
+}
+
+@keyframes scroll-icon {
+    0%{
+        opacity: 0;
+        transform: translate(-0px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0px,50px);
+    }
 }

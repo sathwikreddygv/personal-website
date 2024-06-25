@@ -21,10 +21,19 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="mt-8 px-28 text-center">
-				<div>I'm a Fullstack developer from India. Here, you'll find my projects, blog and some cool animations :)</div>
+				<div>I'm a Fullstack developer from India. Here, you'll find my projects, blogs and some cool animations :)</div>
 				<div>Feel free to explore and connect with me. Thanks for visiting!</div>
 			</div>
 			<main>
+				<div className="circle flex items-center justify-center mt-64">
+					<div className="item"><img src="/icons/javascript.svg" /></div>
+					<div className="item"><img src="/icons/react.svg" /></div>
+					<div className="item"><img src="/icons/node.svg" /></div>
+					<div className="item"><img src="/icons/tailwind.svg" /></div>
+					<div className="item"><img src="/icons/redis.svg" /></div>
+					<div className="item"><img src="/icons/mysql.svg" /></div>
+					<div className="">My Tech Stack</div>
+				</div>
 				<ul id="cards">
 					<li className="card" id="card_1">
 						<div className=" flex justify-center">

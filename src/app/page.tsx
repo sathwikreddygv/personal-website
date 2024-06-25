@@ -20,75 +20,29 @@ export default function Home() {
 					<IconChevronsDown id="scroll-icon" className="w-8 sm:w-12 h-8 sm:h-12" stroke={2}/>
 				</div>
 			</div>
-			<div className="mt-8 px-28 text-center">
+			<div className={`mt-8 px-4 sm:px-28 text-center`}>
 				<div>I'm a Fullstack developer from India. Here, you'll find my projects, blogs and some cool animations :)</div>
 				<div>Feel free to explore and connect with me. Thanks for visiting!</div>
 			</div>
-			<main>
-				<div className="circle flex items-center justify-center mt-64">
-					<div className="item"><img src="/icons/javascript.svg" /></div>
-					<div className="item"><img src="/icons/react.svg" /></div>
-					<div className="item"><img src="/icons/node.svg" /></div>
-					<div className="item"><img src="/icons/tailwind.svg" /></div>
-					<div className="item"><img src="/icons/redis.svg" /></div>
-					<div className="item"><img src="/icons/mysql.svg" /></div>
-					<div className="">My Tech Stack</div>
+			<div className="circle flex items-center justify-center mt-64 mb-64">
+				<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
+				<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
+				<div className="item"><img className="h-14 w-14" src="/icons/tailwind.svg" /></div>
+				<div className="item"><img className="h-14 w-14" src="/icons/node.svg" /></div>
+				<div className="item"><img className="h-12 w-12" src="/icons/redis.svg" /></div>
+				<div className="item"><img className="h-16 w-16" src="/icons/mysql.svg" /></div>
+				<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
+				<div className={``}>My Tech Stack</div>
+			</div>
+			<div className="p-4 mx-4 sm:mx-32 border border-dashed h-[200px] rounded-large">
+				<div className="text-xl">Projects</div>
+				<div>
+					
 				</div>
-				<ul id="cards">
-					<li className="card" id="card_1">
-						<div className=" flex justify-center">
-							{/* <div>
-								<h2>whatsapp-period-tracking-bot</h2>
-								<p>A Period Tracking Whatsapp Bot for Women</p>
-								<p><a href="https://github.com/sathwikreddygv/whatsapp-period-tracking-bot" target="_blank" className="flex items-center justify-center text-blue-600 underline text-lg cp">Github Repo <LuExternalLink className="h-5 w-5 ml-2"/></a></p>
-							</div>
-							<figure> */}
-								<img className="w-[600px] h-72 revealing-image" src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
-							{/* </figure> */}
-						</div>
-					</li>
-					{/* <li className="card" id="card_2">
-						<div className="card__content">
-							<div>
-								<h2>Pdf Crunch</h2>
-								<p>An In-browser PDF Compressor</p>
-								<p><a href="https://pdf-compressor-vercel.vercel.app/" target="_blank" className="flex items-center justify-center text-blue-600 underline text-lg cp">Try it out <LuExternalLink className="h-5 w-5 ml-2"/></a></p>
-								<p><a href="https://github.com/sathwikreddygv/pdf-crunch" target="_blank" className="flex items-center justify-center text-blue-600 underline text-lg cp">Github Repo <LuExternalLink className="h-5 w-5 ml-2"/></a></p>
-							</div>
-							<figure>
-								<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
-							</figure>
-						</div>
-					</li>
-					<li className="card" id="card_3">
-						<div className="card__content">
-							<div>
-								<h2>Card Three</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-								<p><a href="#top" className="btn btn--accent">Read more</a></p>
-							</div>
-							<figure>
-								<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description"/>
-							</figure>
-						</div>
-					</li>
-					<li className="card" id="card_4">
-						<div className="card__content">
-							<div>
-								<h2>Card Four</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-								<p><a href="#top" className="btn btn--accent">Read more</a></p>
-							</div>
-							<figure>
-								<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
-							</figure>
-						</div>
-					</li> */}
-				</ul>
-			</main>
-			<aside>
-				
-			</aside>
+			</div>
+			<div className="p-4 mx-4 sm:mx-32 mt-16 border border-dashed h-[200px] rounded-large">
+				<div className="text-xl">Blogs</div>
+			</div>
 		</div>
   );
 }

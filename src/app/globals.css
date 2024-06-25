@@ -52,11 +52,13 @@ body {
 		top: 93vh;
 		width: 100vw;
 		font-size: 20px;
+		border: 1px solid black;
 	}
 	to {
 		top: 4;
 		width: 40vw;
 		font-size: 14px;
+		border: 1px solid;
 	}
 }
 
@@ -89,7 +91,7 @@ body {
 
 :root {
 	--card-height: 40vw;
-	--card-margin: 4vw;
+	--card-margin: 7vw;
 	--card-top-offset: 1em;
 	--numcards: 4;
 	--outline-width: 0px;
@@ -186,7 +188,7 @@ main * { /* Poor Man's Reset */
 }
 
 body {
-	color: rgb(255, 255, 255);
+	/* color: rgb(255, 255, 255); */
 
 	font-size: calc(1em + 0.5vw);
 }
@@ -295,4 +297,28 @@ aside p {
 	z-index: 2;
 	font-size: 0.8em;
 	color: #333;
+}
+
+.revealing-image {
+	/* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
 }

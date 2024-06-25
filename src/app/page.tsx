@@ -4,6 +4,10 @@ import ThemeSwitch from "@/components/ThemeSwitch";
 import Image from "next/image";
 import { roboto_mono, pacifico, satisfy, rochester, allura, tangerine, sofia } from './fonts'
 import { IconChevronsDown } from "@tabler/icons-react";
+import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import { HiExternalLink } from "react-icons/hi";
+import { LuExternalLink } from "react-icons/lu";
 
 
 export default function Home() {
@@ -16,33 +20,34 @@ export default function Home() {
 					<IconChevronsDown id="scroll-icon" className="w-8 sm:w-12 h-8 sm:h-12" stroke={2}/>
 				</div>
 			</div>
-			<aside>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
-				
-			</aside>
+			<div className="mt-8 px-28 text-center">
+				<div>I'm a Fullstack developer from India. Here, you'll find my projects, blog and some cool animations :)</div>
+				<div>Feel free to explore and connect with me. Thanks for visiting!</div>
+			</div>
 			<main>
 				<ul id="cards">
 					<li className="card" id="card_1">
+						<div className=" flex justify-center">
+							{/* <div>
+								<h2>whatsapp-period-tracking-bot</h2>
+								<p>A Period Tracking Whatsapp Bot for Women</p>
+								<p><a href="https://github.com/sathwikreddygv/whatsapp-period-tracking-bot" target="_blank" className="flex items-center justify-center text-blue-600 underline text-lg cp">Github Repo <LuExternalLink className="h-5 w-5 ml-2"/></a></p>
+							</div>
+							<figure> */}
+								<img className="w-[600px] h-72 revealing-image" src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
+							{/* </figure> */}
+						</div>
+					</li>
+					{/* <li className="card" id="card_2">
 						<div className="card__content">
 							<div>
-								<h2>Card One</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-								<p><a href="#top" className="btn btn--accent">Read more</a></p>
+								<h2>Pdf Crunch</h2>
+								<p>An In-browser PDF Compressor</p>
+								<p><a href="https://pdf-compressor-vercel.vercel.app/" target="_blank" className="flex items-center justify-center text-blue-600 underline text-lg cp">Try it out <LuExternalLink className="h-5 w-5 ml-2"/></a></p>
+								<p><a href="https://github.com/sathwikreddygv/pdf-crunch" target="_blank" className="flex items-center justify-center text-blue-600 underline text-lg cp">Github Repo <LuExternalLink className="h-5 w-5 ml-2"/></a></p>
 							</div>
 							<figure>
 								<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
-							</figure>
-						</div>
-					</li>
-					<li className="card" id="card_2">
-						<div className="card__content">
-							<div>
-								<h2>Card Two</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-								<p><a href="#top" className="btn btn--accent">Read more</a></p>
-							</div>
-							<figure>
-								<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
 							</figure>
 						</div>
 					</li>
@@ -69,19 +74,11 @@ export default function Home() {
 								<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
 							</figure>
 						</div>
-					</li>
+					</li> */}
 				</ul>
 			</main>
 			<aside>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
 				
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
-				
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
-				
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
 			</aside>
 		</div>
   );

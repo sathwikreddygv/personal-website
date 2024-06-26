@@ -34,13 +34,24 @@ export default function Home() {
 				<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
 				<div className={``}>My Tech Stack</div>
 			</div>
-			<div className="p-4 mx-4 sm:mx-32 border border-dashed h-[200px] rounded-large">
+			<div className="p-4 mx-4 sm:mx-16 border border-dashed rounded-large">
 				<div className="text-xl">Projects</div>
-				<div>
-					
+				<div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 mt-4">
+					<div className="col-span-1 flex items-center justify-center">
+						<img className="revealing-image-from-right w-128 h-64 rounded-lg" src="/images/godis.jpeg" />
+					</div>
+					<div className="col-span-1 flex items-center justify-center">
+						<img className="revealing-image-from-top w-128 h-64 rounded-lg" src="/images/flow_friend.jpeg" />
+					</div>
+					<div className="col-span-1 flex items-center justify-center">
+						<img className="revealing-image-from-bottom w-128 h-64 rounded-lg" src="/images/pdf_crunch.jpeg" />
+					</div>
+					<div className="col-span-1 flex items-center justify-center">
+						<img className="revealing-image-from-left w-128 h-64 rounded-lg" src="/images/godis.jpeg" />
+					</div>
 				</div>
 			</div>
-			<div className="p-4 mx-4 sm:mx-32 mt-16 border border-dashed h-[200px] rounded-large">
+			<div className="p-4 mx-4 sm:mx-16 mt-16 border border-dashed h-[400px] rounded-large">
 				<div className="text-xl">Blogs</div>
 			</div>
 		</div>

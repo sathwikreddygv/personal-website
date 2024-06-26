@@ -359,7 +359,7 @@ aside p {
 	animation-timeline: --revealing-image-from-right;
 
 	/* Tweak range when effect should run*/
-	animation-range: entry 60% cover 60%;
+	animation-range: entry 25% cover 25%;
 }
 
 @keyframes reveal-from-right {

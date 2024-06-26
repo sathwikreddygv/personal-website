@@ -13,7 +13,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function Home() {
 	return (
-		<div className="relative z-10">
+		<div className="relative ">
 			<div className="h-[100vh] relative ">
 				<div className={`text-center absolute text-[36px] sm:text-[64px] w-full flex flex-col items-center justify-center top-[50vh] -translate-y-1/2 ${pacifico.className}`}>
 					<div>{"Hi. I'm Sathwik."}</div>

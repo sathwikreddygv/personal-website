@@ -37,8 +37,8 @@ export default function Home() {
 			</div>
 			<div className="p-4 mx-4 sm:mx-16">
 				<div className="text-xl">Projects</div>
-				<div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 mt-4">
-					<div className="col-span-1 mb-8-48 sm:h-64 ">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 mt-4">
+					<div className="col-span-1 mb-8 sm:h-64 ">
 						<div className="relative group inline-block dark:border-[hsla(0,0%,100%,.3)] border-2 rounded-lg" >
 							<a className="cp group-hover:block hidden absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 " target="_blank" href="https://github.com/sathwikreddygv/redis-written-in-go">
 								<img src="/icons/github.svg" />

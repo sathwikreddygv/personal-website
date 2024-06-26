@@ -21,9 +21,9 @@ export default function Home() {
 					<IconChevronsDown id="scroll-icon" className="w-8 sm:w-12 h-8 sm:h-12" stroke={2}/>
 				</div>
 			</div>
-			<div className={`mt-8 px-4 sm:px-28 text-center text-md`}>
+			<div className={`mt-8 px-4 sm:px-28 text-center text-md ${roboto_mono.className}`}>
 				<div>{"I'm a Fullstack developer from India. Here, you'll find my projects, blogs and some cool animations :)"}</div>
-				<div>Feel free to explore and connect with me. Thanks for visiting!</div>
+				<div className="mt-2">Feel free to explore and connect with me. Thanks for visiting!</div>
 			</div>
 			<div className="circle flex items-center justify-center mt-64 mb-64">
 				<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
@@ -45,7 +45,7 @@ export default function Home() {
 							</a>
 							<img className="revealing-image-from-right group-hover:blur-md h-48 w-auto sm:h-64 rounded-lg hover:scale-110" src="/images/godis.jpeg" />
 						</div>
-						<div className="mt-4">
+						<div className="mt-2">
 							<div className="text-base mb-2">godisDB</div>
 							<div className="text-sm opacity-60">A Redis-like Database in Go</div>
 						</div>
@@ -57,7 +57,7 @@ export default function Home() {
 							</a>
 							<img className="revealing-image-from-left group-hover:blur-md h-48 w-auto sm:h-64 rounded-lg hover:scale-110" src="/images/flow_friend.jpeg" />
 						</div>
-						<div className="mt-4">
+						<div className="mt-2">
 							<div className="text-base mb-2">Flow Friend</div>
 							<div className="text-sm opacity-60">A Period tracking Whatsapp bot for Women</div>
 						</div>
@@ -74,7 +74,7 @@ export default function Home() {
 							</div>
 							<img className="revealing-image-from-right group-hover:blur-md h-48 w-auto sm:h-64 rounded-lg hover:scale-110" src="/images/pdf_crunch.jpeg" />
 						</div>
-						<div className="mt-4">
+						<div className="mt-2">
 							<div className="text-base mb-2">Pdf Crunch</div>
 							<div className="text-sm opacity-60">An In-browser Pdf Compressor</div>
 						</div>
@@ -95,7 +95,7 @@ export default function Home() {
 								<img className=" w-[450px] h-48 sm:h-64 rounded-lg blur-md" src="/images/gaudmire.png" />
 							</div>
 						</div>
-						<div className="mt-4">
+						<div className="mt-2">
 							<div className="text-base mb-2">@sathwikreddygv</div>
 							<div className="text-sm opacity-60">Click to visit my github profile</div>
 						</div>

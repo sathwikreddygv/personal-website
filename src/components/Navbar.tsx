@@ -26,7 +26,7 @@ const Navbar = ({}) => {
 				<div className="cp flex-1 flex items-center justify-center"><ThemeSwitch/></div>
 			</div>
 		</>:
-		<div className="sticky flex items-center justify-center left-0 right-0 bottom-4 m-auto z-20">
+		<div className="fixed flex items-center justify-center left-0 right-0 bottom-4 m-auto z-20">
 			<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="bg-opacity-60 flex items-center w-[70vw] rounded-full px-4 z-20 dark:border-[hsla(0,0%,100%,.3)] dark:border-2 bg-[rgba(0,0,0,.1)] dark:bg-transparent overflow-hidden">
 				<div className="flex-1 text-center p-3 font-bold flex items-center justify-center"><BsInfoCircle className="w-4 h-4 mr-1" strokeWidth={1}/></div>
 				<div className="flex-1 text-center p-3 font-bold flex items-center justify-center"><BiLaptop className="w-4 h-4 mr-1" strokeWidth={1}/></div>

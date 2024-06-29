@@ -113,7 +113,7 @@ export default function Home() {
 							Building my own Redis in Go - Part 1
 						</div>
 						<div className="text-sm opacity-50 mt-1">
-							Introduction I've always wanted to understand how Redis works internally and how its features are built. So, I decided to create my own version of Redis, but in Go (Redis is actually built in C). The name "godisDB" came naturally when merging Go and ...
+							{"Introduction I've always wanted to understand how Redis works internally and how its features are built. So, I decided to create my own version of Redis, but in Go (Redis is actually built in C). The name 'godisDB' came naturally when merging Go and ..."}
 						</div>
 					</div>
 				</a>
@@ -125,7 +125,7 @@ export default function Home() {
 							Understanding Scroll Driven Animations in CSS
 						</div>
 						<div className="text-sm opacity-50 mt-1">
-						Scroll-driven animations are "animations that are triggered as the user scrolls through a webpage," according to ChatGPT. I always wanted to build a personal website with cool scroll-based animations...
+						{"Scroll-driven animations are 'animations that are triggered as the user scrolls through a webpage,' according to ChatGPT. I always wanted to build a personal website with cool scroll-based animations..."}
 						</div>
 					</div>
 				</a>
@@ -137,7 +137,7 @@ export default function Home() {
 							WTF is an event loop in Javascript
 						</div>
 						<div className="text-sm opacity-50 mt-1">
-						You probably already know that JavaScript is a single-threaded language as you read this blog. However, JavaScript can carry out asynchronous actions that may appear to be occurring in ...
+						{"You probably already know that JavaScript is a single-threaded language as you read this blog. However, JavaScript can carry out asynchronous actions that may appear to be occurring in ..."}
 						</div>
 					</div>
 				</a>

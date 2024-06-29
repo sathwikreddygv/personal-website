@@ -9,7 +9,7 @@ import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { HiExternalLink } from "react-icons/hi";
 import { LuExternalLink } from "react-icons/lu";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsGithub } from "react-icons/bs";
 
 export default function Home() {
 	return (
@@ -150,7 +150,7 @@ export default function Home() {
 					<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mr-12" />
 					<div>
 						<a target="_blank" href="https://x.com/sathwikreddygv7" className="mt-4 text-sm flex items-center"><img src="/icons/twitter.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv7</a>
-						<a target="_blank" href="https://github.com/sathwikreddygv" className="mt-4 text-sm flex items-center"><img src="/icons/github-white.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+						<a target="_blank" href="https://github.com/sathwikreddygv" className="mt-4 text-sm flex items-center"><BsGithub className="w-6 h-6"/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 						<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="mt-4 text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 						<a target="_blank" href="https://sathwikreddygv.blog" className="mt-4 text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 					</div>

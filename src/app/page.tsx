@@ -104,7 +104,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="p-4 mx-4 sm:mx-16 md:mx-28 mt-16 border border-dashed rounded-large">
+			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-16 border border-dashed rounded-large">
 				<div className="text-xl">Blogs</div>
 				<a className="flex mt-4 cp" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="dark:border-[hsla(0,0%,100%,.3)] border-2 w-24 h-16 mt-1 rounded-md" src="/images/godis.jpeg" />
@@ -144,8 +144,17 @@ export default function Home() {
 
 				<div className="text-center mt-6 mb-2 text-md">View more at <a href="https://sathwikreddygv.blog" target="_blank" className="underline text-[#0078ff]">https://sathwikreddygv.blog</a></div>
 			</div>
-			<div className="mt-16 flex items-center justify-center">
-			<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24" />
+			<div className="mt-16 flex flex-col items-center justify-center mb-32">
+				<div className="text-base mb-2">You can find me on X and Linkedin as well!</div>
+				<div className="flex items-center justify-center">
+					<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mr-12" />
+					<div>
+						<a target="_blank" href="https://x.com/sathwikreddygv7" className="mt-4 text-sm flex items-center"><img src="/icons/twitter.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv7</a>
+						<a target="_blank" href="https://github.com/sathwikreddygv" className="mt-4 text-sm flex items-center"><img src="/icons/github-white.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+						<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="mt-4 text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+						<a target="_blank" href="https://sathwikreddygv.blog" className="mt-4 text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+					</div>
+				</div>
 			</div>
 		</div>
   );

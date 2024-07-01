@@ -39,19 +39,19 @@ const Navbar: React.FC<NavbarProps> = ({ active_tab, set_active_tab }) => {
 	return (
 		<>
 			<div id={'sticky-parallax-header'} style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="hidden sm:flex sticky left-1/2 -translate-x-1/2  bg-opacity-60 items-center w-[40vw] rounded-full px-4 z-20 dark:border-[hsla(0,0%,100%,.3)] dark:border-2 bg-[rgba(0,0,0,.1)] dark:bg-transparent overflow-hidden">
-				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='about-header' ? 'bg-white bg-opacity-90 text-black rounded-full my-2' : ''}`} onClick={() => navigate('about-header')}><GoInfo className="w-4 h-4 mr-1" strokeWidth={1}/> About</div>
-				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='projects-header' ? 'bg-white bg-opacity-90 text-black rounded-full my-2' : ''}`} onClick={() => navigate('projects-header')}><BiLaptop className="w-4 h-4 mr-1" strokeWidth={1}/> Projects</div>
-				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='blogs-header' ? 'bg-white bg-opacity-90 text-black rounded-full my-2' : ''}`} onClick={() => navigate('blogs-header')}><TbWriting className="w-4 h-4 mr-1" strokeWidth={3}/> Blog</div>
-				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='contact-header' ? 'bg-white bg-opacity-90 text-black rounded-full my-2' : ''}`} onClick={() => navigate('contact-header')}><IconAt className="w-4 h-4 mr-1" strokeWidth={3}/> Contact</div>
+				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='about-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('about-header')}><GoInfo className="w-4 h-4 mr-1" strokeWidth={1}/> About</div>
+				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='projects-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('projects-header')}><BiLaptop className="w-4 h-4 mr-1" strokeWidth={1}/> Projects</div>
+				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='blogs-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('blogs-header')}><TbWriting className="w-4 h-4 mr-1" strokeWidth={3}/> Blog</div>
+				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='contact-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('contact-header')}><IconAt className="w-4 h-4 mr-1" strokeWidth={3}/> Contact</div>
 				<div className="cp flex-1 flex items-center justify-center"><ThemeSwitch/></div>
 			</div>
 
 			<div className="fixed flex sm:hidden items-center justify-center left-0 right-0 bottom-4 m-auto z-20 w-[100vw]">
 				<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="bg-opacity-60 flex items-center w-[70vw] rounded-full px-2 py-3 z-20 dark:border-[hsla(0,0%,100%,.3)] dark:border-2 bg-[rgba(0,0,0,.1)] dark:bg-transparent overflow-hidden">
-					<div className={`flex-1 text-center font-bold flex items-center justify-center ${active_tab==='about-header' ? 'bg-white bg-opacity-90 text-black rounded-full' : ''}`} onClick={() => navigate('about-header')}><GoInfo className="w-6 h-6 mr-2" strokeWidth={1}/></div>
-					<div className={`flex-1 text-center font-bold flex items-center justify-center ${active_tab==='projects-header' ? 'bg-white bg-opacity-90 text-black rounded-full' : ''}`} onClick={() => navigate('projects-header')}><BiLaptop className="w-6 h-6 mr-2" strokeWidth={1}/></div>
-					<div className={`flex-1 text-center font-bold flex items-center justify-center ${active_tab==='blogs-header' ? 'bg-white bg-opacity-90 text-black rounded-full' : ''}`} onClick={() => navigate('blogs-header')}><TbWriting className="w-6 h-6 mr-2" strokeWidth={3}/></div>
-					<div className={`flex-1 text-center font-bold flex items-center justify-center ${active_tab==='contact-header' ? 'bg-white bg-opacity-90 text-black rounded-full' : ''}`} onClick={() => navigate('contact-header')}><IconAt className="w-6 h-6 mr-2" strokeWidth={3}/></div>
+					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='about-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('about-header')}><GoInfo className="w-6 h-6" strokeWidth={1}/></div>
+					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='projects-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('projects-header')}><BiLaptop className="w-6 h-6" strokeWidth={1}/></div>
+					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='blogs-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('blogs-header')}><TbWriting className="w-6 h-6" strokeWidth={3}/></div>
+					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='contact-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('contact-header')}><IconAt className="w-6 h-6" strokeWidth={3}/></div>
 					<div className="flex-1 flex items-center justify-center"><ThemeSwitch/></div>
 				</div>
 			</div>

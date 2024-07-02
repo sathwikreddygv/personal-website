@@ -35,7 +35,7 @@ const Navbar: React.FC = ({}) => {
 				inline: 'nearest',
 			});
 		}
-		set_active_tab(id)
+		// set_active_tab(id)
 	}
 
 	return (

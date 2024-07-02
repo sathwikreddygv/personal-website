@@ -5,9 +5,9 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
 import { inter } from './fonts'
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import { useElements } from "./elements";
-
+import { ActiveTabContext } from "@/contexts/ActiveTabContext";
 
 // export const metadata: Metadata = {
 // 	title: "Create Next App",
@@ -22,54 +22,56 @@ export default function RootLayout({
 
 	const [active_tab, set_active_tab] = useState<string>('about-header');
 	const { refsArray, inViewArray } = useElements();
-	const debounce = (func: () => void, wait: number) => {
-		let timeout: NodeJS.Timeout;
-		return (...args: any[]) => {
-		  clearTimeout(timeout);
-		  timeout = setTimeout(() => func(), wait);
-		};
-	  };
+	// const debounce = (func: () => void, wait: number) => {
+	// 	let timeout: NodeJS.Timeout;
+	// 	return (...args: any[]) => {
+	// 	  clearTimeout(timeout);
+	// 	  timeout = setTimeout(() => func(), wait);
+	// 	};
+	//   };
 
-	const handleScrollEnd = () => {
-		console.log("Scrolling has ended", inViewArray);
-		// if(elements[0].isVisible)set_active_tab('about-header')
-		// if(elements[1].isVisible) set_active_tab('projects-header')
-		// if(elements[2].isVisible) set_active_tab('blogs-header')
-		// if(elements[3].isVisible) set_active_tab('contact-header') 
-		if (inViewArray[0]) {
-			set_active_tab('about-header')
-			console.log("Scrolling has en, set_active_tab('about-header')ded");
-		} else if (inViewArray[1]) {
-			set_active_tab('projects-header')
-			console.log("Scrolling has ended, set_active_tab('projects-header')");
-		} else if(inViewArray[2]) {
-			set_active_tab('blogs-header')
-			console.log("Scrolling has en, set_active_tab('blogs-header')ded");
-		} else if(inViewArray[3]) {
-			set_active_tab('contact-header') 
-			console.log("Scrolling has ended, set_active_tab('contact-header') ");
-		} 
-	};
+	// const handleScrollEnd = () => {
+	// 	console.log("Scrolling has ended", inViewArray);
+	// 	// if(elements[0].isVisible)set_active_tab('about-header')
+	// 	// if(elements[1].isVisible) set_active_tab('projects-header')
+	// 	// if(elements[2].isVisible) set_active_tab('blogs-header')
+	// 	// if(elements[3].isVisible) set_active_tab('contact-header') 
+	// 	if (inViewArray[0]) {
+	// 		set_active_tab('about-header')
+	// 		console.log("Scrolling has en, set_active_tab('about-header')ded");
+	// 	} else if (inViewArray[1]) {
+	// 		set_active_tab('projects-header')
+	// 		console.log("Scrolling has ended, set_active_tab('projects-header')");
+	// 	} else if(inViewArray[2]) {
+	// 		set_active_tab('blogs-header')
+	// 		console.log("Scrolling has en, set_active_tab('blogs-header')ded");
+	// 	} else if(inViewArray[3]) {
+	// 		set_active_tab('contact-header') 
+	// 		console.log("Scrolling has ended, set_active_tab('contact-header') ");
+	// 	} 
+	// };
 	
-	useEffect(() => {
-		const debouncedHandleScrollEnd = debounce(handleScrollEnd, 100);
+	// useEffect(() => {
+	// 	const debouncedHandleScrollEnd = debounce(handleScrollEnd, 100);
 	
-		const handleScroll = () => {
-		debouncedHandleScrollEnd();
-		};
+	// 	const handleScroll = () => {
+	// 	debouncedHandleScrollEnd();
+	// 	};
 	
-		window.addEventListener('scroll', handleScroll);
-		return () => {
-		window.removeEventListener('scroll', handleScroll);
-		};
-	}, [handleScrollEnd]);
+	// 	window.addEventListener('scroll', handleScroll);
+	// 	return () => {
+	// 	window.removeEventListener('scroll', handleScroll);
+	// 	};
+	// }, [handleScrollEnd]);
 
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={inter.className}>
 				<Providers>
-					<Navbar active_tab={active_tab} set_active_tab={set_active_tab}/>
-					{children}
+					<ActiveTabContext.Provider value={{active_tab, set_active_tab}}>
+						<Navbar />
+						{children}
+					</ActiveTabContext.Provider>
 				</Providers>
 			</body>
 		</html>

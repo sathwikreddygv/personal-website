@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useContext } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import useMediaQuery from "./useMediaQuery";
 import { IconActivityHeartbeat, IconAt, IconNfcOff } from "@tabler/icons-react";
@@ -15,14 +15,16 @@ import { TbWriting } from "react-icons/tb";
 import { CgInfo } from "react-icons/cg";
 import { FaInfo, FaInfoCircle } from "react-icons/fa";
 import { GiInfo } from "react-icons/gi";
+import { ActiveTabContext } from "@/contexts/ActiveTabContext";
 
 interface NavbarProps {
 	active_tab: string;
 	set_active_tab: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ active_tab, set_active_tab }) => {
+const Navbar: React.FC = ({}) => {
 	const isDesktop = useMediaQuery('(min-width: 768px)');
+	const { active_tab, set_active_tab } = useContext(ActiveTabContext)
 
 	const navigate = (id:string) : void => {
 		let element = document.getElementById(id)

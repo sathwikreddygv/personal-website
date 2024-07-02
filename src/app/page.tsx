@@ -10,10 +10,11 @@ import { FiExternalLink } from "react-icons/fi";
 import { HiExternalLink } from "react-icons/hi";
 import { LuExternalLink } from "react-icons/lu";
 import { BsArrowRight, BsGithub } from "react-icons/bs";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import useIntersectionObserver from "@/components/IntersectionObserver";
 import { useElements } from "./elements";
 import { useInView } from "react-intersection-observer";
+import { ActiveTabContext } from "@/contexts/ActiveTabContext";
 
 const options = {
 	threshold: 0.1,
@@ -21,6 +22,7 @@ const options = {
 
 export default function Home() {
 	const { refsArray, inViewArray } = useElements();
+	const { active_tab, set_active_tab } = useContext(ActiveTabContext)
 	// const [ref1, inView1] = useInView(options);
 	// const [ref2, inView2] = useInView(options);
 	// const [ref3, inView3] = useInView(options);
@@ -28,7 +30,16 @@ export default function Home() {
 
 	useEffect(() => {
 		console.log('inView1inView1', inViewArray)
-	}, [inViewArray[0]]);
+		if (inViewArray[3]) {
+			set_active_tab('contact-header')
+		} else if(inViewArray[2]) {
+			set_active_tab('blogs-header')
+		} else if(inViewArray[1]) {
+			set_active_tab('projects-header')
+		} else if(inViewArray[0]) {
+			set_active_tab('about-header')
+		}
+	}, [inViewArray[0], inViewArray[1], inViewArray[2], inViewArray[3]]);
 
 	// const refsArray = [ref1, ref2, ref3, ref4];
 
@@ -125,7 +136,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-16 border border-dashed rounded-large">
-				<div ref={refsArray[3]} className="text-xl" id='blogs-header'>Blogs</div>
+				<div ref={refsArray[2]} className="text-xl" id='blogs-header'>Blogs</div>
 				<a className="flex mt-4 cp" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="dark:border-[hsla(0,0%,100%,.3)] border-2 w-24 h-16 mt-1 rounded-md" src="/images/godis.jpeg" />
 					<div className="flex-1 min-w-0 flex flex-col ml-4">
@@ -165,7 +176,7 @@ export default function Home() {
 				<div className="text-center mt-6 mb-2 text-md">View more at <a href="https://sathwikreddygv.blog" target="_blank" className="underline text-[#0078ff]">https://sathwikreddygv.blog</a></div>
 			</div>
 			<div className="mt-16 flex flex-col items-center justify-center mb-32">
-				<div ref={refsArray[4]} className="text-base mb-2" id='contact-header'>You can find me on X and Linkedin as well!</div>
+				<div ref={refsArray[3]} className="text-base mb-2" id='contact-header'>You can find me on X and Linkedin as well!</div>
 				<div className="flex items-center justify-center">
 					<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mr-12" />
 					<div>

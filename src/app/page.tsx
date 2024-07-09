@@ -45,13 +45,27 @@ export default function Home() {
 
 	return (
 		<div className="relative ">
-			<div className="h-[100vh] relative ">
-				<div className={`text-center absolute text-[36px] sm:text-[64px] w-full flex flex-col items-center justify-center top-[50vh] -translate-y-1/2 ${pacifico.className}`}>
+			<div className="relative h-[100vh] bg-[#fed230] text-black">
+				<svg viewBox="0 0 1440 320" className="absolute -bottom-1" xmlns="http://www.w3.org/2000/svg">
+					<path fill="#000000" d="
+						M0,10 C390,420 480,0 790,100 C1100,420 1200,0 1440,10 L1440,320 L0,320 Z
+					"></path>
+				</svg>
+				<div className={`relative z-10 p-8 flex items-center justify-center flex-col text-[42px] text-[#190e23] font-bold pt-24`}>
+					<div className=" font-bold">Hi. I'm Sathwik</div>
+					<div className="">A FullStack Developer</div>
+				</div>
+				<div className="w-1/2 h-[300px] bg-[#110f12] absolute rounded-lg top-[70vh] left-1/2 -translate-x-1/2 -translate-y-1/2">
+
+				</div>
+			</div>
+			{/* <div className="h-[100vh] relative bg-[#FFDB58] text-black">
+				<div className={`translate-fancy text-center absolute text-[36px] sm:text-[64px] w-full flex flex-col items-center justify-center top-[50vh] -translate-y-1/2 ${pacifico.className}`}>
 					<div>{"Hi. I'm Sathwik."}</div>
 					<div>A Software Developer.</div>
 					<IconChevronsDown id="scroll-icon" className="w-8 sm:w-12 h-8 sm:h-12" stroke={2}/>
 				</div>
-			</div>
+			</div> */}
 			<div>
 			<div className={`mt-8 px-4 sm:px-28 text-center text-md ${roboto_mono.className}`}>
 				<div ref={refsArray[0]} id='about-header'>{"I'm a Fullstack developer from India. Here, you'll find my projects and blogs."}</div>

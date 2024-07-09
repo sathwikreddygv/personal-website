@@ -30,12 +30,7 @@
 body {
 position: relative;
   color: rgb(var(--foreground));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background))
-    )
-    rgb(var(--background));
+  background: black
 }
 
 @layer utilities {

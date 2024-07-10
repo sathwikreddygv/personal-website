@@ -53,7 +53,7 @@ export default function Home() {
 				</svg>
 				<div className={`relative z-10 p-8 flex items-center justify-center flex-col pt-32`}>
 					<div className="text-[42px] text-[#141309] font-bold text-center mb-4">
-						<div className=" font-bold">Hi. I'm Sathwik</div>
+						<div className=" font-bold">{"Hi. I'm Sathwik"}</div>
 						<div className="">A FullStack Developer</div>
 					</div>
 					<div className="text-base text-[#b18a09] text-center">

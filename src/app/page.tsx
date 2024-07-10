@@ -153,14 +153,14 @@ export default function Home() {
 					<img className="flex-2 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/godis.jpeg" />
 					<div className="flex-3 sm:ml-32 mt-4 sm:mt-0">
 						<div className="text-xxl font-bold mb-2 sm:mb-4">GodisDB</div>
-						<div className="text-base opacity-60">GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli.</div>
+						<div className="text-base opacity-60">{"GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli."}</div>
 					</div>
 				</div>
 				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
 					<img className="sm:hidden flex-2 sm:ml-32 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
 					<div className="flex-3 mt-4 sm:mt-0">
 						<div className="text-xxl font-bold mb-2 sm:mb-4">Flow Friend</div>
-						<div className="text-base opacity-60">Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders.</div>
+						<div className="text-base opacity-60">{"Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders."}</div>
 					</div>
 					<img className="hidden sm:block flex-2 sm:ml-32 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
 				</div>
@@ -168,7 +168,7 @@ export default function Home() {
 					<img className="flex-2 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/pdf_crunch.jpeg" />
 					<div className="flex-3 sm:ml-32 mt-4 sm:mt-0">
 						<div className="text-xxl font-bold mb-2 sm:mb-4">Pdf Crunch</div>
-						<div className="text-base opacity-60">Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents. </div>
+						<div className="text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
 					</div>
 				</div>
 			</div>

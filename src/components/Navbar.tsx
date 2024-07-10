@@ -45,7 +45,7 @@ const Navbar: React.FC = ({}) => {
 				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='projects-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('projects-header')}><BiLaptop className="w-4 h-4 mr-1" strokeWidth={1}/> Projects</div>
 				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='blogs-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('blogs-header')}><TbWriting className="w-4 h-4 mr-1" strokeWidth={3}/> Blog</div>
 				<div className={`cp flex-1 text-center p-3 font-bold flex items-center justify-center ${active_tab==='contact-header' ? ' border-2 rounded-full my-2' : ''}`} onClick={() => navigate('contact-header')}><IconAt className="w-4 h-4 mr-1" strokeWidth={3}/> Contact</div>
-				{/* <div className="cp flex-1 flex items-center justify-center"><ThemeSwitch/></div> */}
+				<div className="cp flex-1 flex items-center justify-center"><ThemeSwitch/></div>
 			</div>
 
 			<div className="fixed flex sm:hidden items-center justify-center left-0 right-0 bottom-4 m-auto z-20 w-[100vw]">
@@ -54,7 +54,7 @@ const Navbar: React.FC = ({}) => {
 					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='projects-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('projects-header')}><BiLaptop className="w-6 h-6" strokeWidth={1}/></div>
 					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='blogs-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('blogs-header')}><TbWriting className="w-6 h-6" strokeWidth={3}/></div>
 					<div className={`flex-1 text-center font-bold flex items-center justify-center mr-2 ${active_tab==='contact-header' ? 'bg-white text-black rounded-full py-2' : ''}`} onClick={() => navigate('contact-header')}><IconAt className="w-6 h-6" strokeWidth={3}/></div>
-					{/* <div className="flex-1 flex items-center justify-center"><ThemeSwitch/></div> */}
+					<div className="flex-1 flex items-center justify-center"><ThemeSwitch/></div>
 				</div>
 			</div>
 		</>

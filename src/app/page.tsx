@@ -48,15 +48,30 @@ export default function Home() {
 			<div className="relative h-[100vh] bg-[#fed230] text-black">
 				<svg viewBox="0 0 1440 320" className="absolute -bottom-1" xmlns="http://www.w3.org/2000/svg">
 					<path fill="#000000" d="
-						M0,10 C390,420 480,0 790,100 C1100,420 1200,0 1440,10 L1440,320 L0,320 Z
+						M0,10 C390,420 480,0 790,100 C1100,440 1200,0 1440,10 L1440,320 L0,320 Z
 					"></path>
 				</svg>
-				<div className={`relative z-10 p-8 flex items-center justify-center flex-col text-[42px] text-[#190e23] font-bold pt-24`}>
-					<div className=" font-bold">Hi. I'm Sathwik</div>
-					<div className="">A FullStack Developer</div>
+				<div className={`relative z-10 p-8 flex items-center justify-center flex-col pt-32`}>
+					<div className="text-[42px] text-[#141309] font-bold text-center mb-4">
+						<div className=" font-bold">Hi. I'm Sathwik</div>
+						<div className="">A FullStack Developer</div>
+					</div>
+					<div className="text-base text-[#b18a09] text-center">
+						<div ref={refsArray[0]} id='about-header'>{"I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles."}</div>
+						<div className="mt-2">Feel free to explore and connect with me. Thanks for stopping by!</div>
+					</div>
 				</div>
-				<div className="w-1/2 h-[300px] bg-[#110f12] absolute rounded-lg top-[70vh] left-1/2 -translate-x-1/2 -translate-y-1/2">
-
+				<div className="w-full sm:w-1/2 h-[400px] bg-[#110f12] absolute rounded-lg -bottom-[150px] left-1/2 -translate-x-1/2">
+					<div className="circle flex items-center justify-center mt-48">
+						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
+						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
+						<div className="item"><img className="h-14 w-14" src="/icons/tailwind.svg" /></div>
+						<div className="item"><img className="h-14 w-14" src="/icons/node.svg" /></div>
+						<div className="item"><img className="h-12 w-12" src="/icons/redis.svg" /></div>
+						<div className="item"><img className="h-16 w-16" src="/icons/mysql.svg" /></div>
+						<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
+						<div className={`text-white text-base`}>My Tech Stack</div>
+					</div>
 				</div>
 			</div>
 			{/* <div className="h-[100vh] relative bg-[#FFDB58] text-black">
@@ -67,23 +82,9 @@ export default function Home() {
 				</div>
 			</div> */}
 			<div>
-			<div className={`mt-8 px-4 sm:px-28 text-center text-md ${roboto_mono.className}`}>
-				<div ref={refsArray[0]} id='about-header'>{"I'm a Fullstack developer from India. Here, you'll find my projects and blogs."}</div>
-				<div className="mt-2">Feel free to explore and connect with me. Thanks for visiting!</div>
 			</div>
-			<div className="circle flex items-center justify-center mt-64 mb-64">
-				<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
-				<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
-				<div className="item"><img className="h-14 w-14" src="/icons/tailwind.svg" /></div>
-				<div className="item"><img className="h-14 w-14" src="/icons/node.svg" /></div>
-				<div className="item"><img className="h-12 w-12" src="/icons/redis.svg" /></div>
-				<div className="item"><img className="h-16 w-16" src="/icons/mysql.svg" /></div>
-				<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
-				<div className={``}>My Tech Stack</div>
-			</div>
-			</div>
-			<div className="p-4 mx-4 sm:mx-16">
-				<div ref={refsArray[1]} className="text-xl" id='projects-header'>Projects</div>
+			<div className="p-4 mt-60 mx-4 sm:mx-32 flex flex-col ">
+				{/* <div ref={refsArray[1]} className="text-xl" id='projects-header'>Projects</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 mt-4">
 					<div className="col-span-1 mb-8  flex flex-col items-center justify-center">
 						<div className="relative group inline-block rounded-lg" >
@@ -146,6 +147,28 @@ export default function Home() {
 								<div className="text-sm opacity-60">Click to visit my github profile</div>
 							</div>
 						</div>
+					</div>
+				</div> */}
+				<div className="flex items-center flex-wrap sm:flex-nowrap">
+					<img className="flex-2 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/godis.jpeg" />
+					<div className="flex-3 sm:ml-32 mt-4 sm:mt-0">
+						<div className="text-xxl font-bold mb-2 sm:mb-4">GodisDB</div>
+						<div className="text-base opacity-60">GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli.</div>
+					</div>
+				</div>
+				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
+					<img className="sm:hidden flex-2 sm:ml-32 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
+					<div className="flex-3 mt-4 sm:mt-0">
+						<div className="text-xxl font-bold mb-2 sm:mb-4">Flow Friend</div>
+						<div className="text-base opacity-60">Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders.</div>
+					</div>
+					<img className="hidden sm:block flex-2 sm:ml-32 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
+				</div>
+				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
+					<img className="flex-2 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/pdf_crunch.jpeg" />
+					<div className="flex-3 sm:ml-32 mt-4 sm:mt-0">
+						<div className="text-xxl font-bold mb-2 sm:mb-4">Pdf Crunch</div>
+						<div className="text-base opacity-60">Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents. </div>
 					</div>
 				</div>
 			</div>

@@ -418,7 +418,7 @@ aside p {
 }
 
 :root {
-    --translate-distance: 200px; /* Default distance for desktop */
+    --translate-distance: 150px; /* Default distance for desktop */
 }
 
 @media (max-width: 600px) {

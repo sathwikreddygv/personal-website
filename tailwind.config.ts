@@ -22,6 +22,7 @@ module.exports = {
 			md: ['18px', '26px'],
 			lg: ['20px', '28px'],
 			xl: ['24px', '32px'],
+			xxl: ['32px', '36px'],
 		},
 		borderRadius: {
 			'none': '0',

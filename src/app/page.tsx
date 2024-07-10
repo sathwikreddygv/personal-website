@@ -9,7 +9,7 @@ import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { HiExternalLink } from "react-icons/hi";
 import { LuExternalLink } from "react-icons/lu";
-import { BsArrowRight, BsGithub } from "react-icons/bs";
+import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter, BsTwitterX, BsX } from "react-icons/bs";
 import { useCallback, useContext, useEffect, useState } from "react";
 import useIntersectionObserver from "@/components/IntersectionObserver";
 import { useElements } from "./elements";
@@ -41,28 +41,62 @@ export default function Home() {
 		}
 	}, [inViewArray[0], inViewArray[1], inViewArray[2], inViewArray[3]]);
 
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+	  const handleScroll = () => {
+		const scrollTop = window.scrollY;
+		if (scrollTop > 500) { // Adjust this value as needed
+		  setIsScrolled(true);
+		} else {
+		  setIsScrolled(false);
+		}
+	  };
+	  
+	  handleScroll()
+	  window.addEventListener('scroll', handleScroll);
+  
+	  return () => {
+		window.removeEventListener('scroll', handleScroll);
+	  };
+	}, []);
+  
+
 	// const refsArray = [ref1, ref2, ref3, ref4];
 
 	return (
-		<div className="relative ">
-			<div className="relative h-[100vh] bg-[#fed230] text-black">
+		<div className="relative mx-auto">
+			<div className="relative h-[90vh] sm:h-[100vh] bg-[#fed230] text-black">
 				<svg viewBox="0 0 1440 320" className="absolute -bottom-1" xmlns="http://www.w3.org/2000/svg">
 					<path fill="#000000" d="
 						M0,10 C390,420 480,0 790,100 C1100,440 1200,0 1440,10 L1440,320 L0,320 Z
 					"></path>
 				</svg>
 				<div className={`relative z-10 p-8 flex items-center justify-center flex-col pt-32`}>
-					<div className="text-[42px] text-[#141309] font-bold text-center mb-4">
+					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between w-[100vw] -my-2">
+						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2"/>
+						<div className="flex-center pr-6">
+							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 " color={isScrolled ? 'white' : 'black'}/></a>
+							<a target="_blank" href="https://x.com/sathwikreddygv7" className="text-sm flex items-center"><BsTwitterX className="w-5 h-5 cp mr-4" color={isScrolled ? 'white' : 'black'}/></a>
+							{/* <BsLinkedin className="w-6 h-6 cp mr-4"/> */}
+							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 mr-4"/></a>
+							<a target="_blank" href="https://sathwikreddygv.blog" className="text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 "/></a>
+						</div>
+					</div>
+					<div className="text-xl sm:text-[42px] sm:leading-normal text-[#141309] font-bold text-center mb-4">
 						<div className=" font-bold">{"Hi. I'm Sathwik"}</div>
 						<div className="">A FullStack Developer</div>
 					</div>
-					<div className="text-base text-[#b18a09] text-center">
+					<div className="text-sm sm:text-base text-[#b18a09] text-center">
 						<div ref={refsArray[0]} id='about-header'>{"I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles."}</div>
 						<div className="mt-2">Feel free to explore and connect with me. Thanks for stopping by!</div>
 					</div>
+					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp shadow-lg hover:shadow-xl" onClick={() => window.open("https://x.com/sathwikreddygv7")}>
+						Say Hello! 👋🏼
+					</div>
 				</div>
-				<div className="w-full sm:w-1/2 h-[400px] bg-[#110f12] absolute rounded-lg -bottom-[150px] left-1/2 -translate-x-1/2">
-					<div className="circle flex items-center justify-center mt-48">
+				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[15vh] left-1/2 -translate-x-1/2">
+					{/* <div className="circle flex items-center justify-center mt-48">
 						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/tailwind.svg" /></div>
@@ -71,7 +105,7 @@ export default function Home() {
 						<div className="item"><img className="h-16 w-16" src="/icons/mysql.svg" /></div>
 						<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
 						<div className={`text-white text-base`}>My Tech Stack</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			{/* <div className="h-[100vh] relative bg-[#FFDB58] text-black">
@@ -152,23 +186,23 @@ export default function Home() {
 				<div className="flex items-center flex-wrap sm:flex-nowrap">
 					<img className="flex-2 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/godis.jpeg" />
 					<div className="flex-3 sm:ml-32 mt-4 sm:mt-0">
-						<div className="text-xxl font-bold mb-2 sm:mb-4">GodisDB</div>
-						<div className="text-base opacity-60">{"GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli."}</div>
+						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">GodisDB</div>
+						<div className="text-sm sm:text-base opacity-60">{"GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli."}</div>
 					</div>
 				</div>
 				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
 					<img className="sm:hidden flex-2 sm:ml-32 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
 					<div className="flex-3 mt-4 sm:mt-0">
-						<div className="text-xxl font-bold mb-2 sm:mb-4">Flow Friend</div>
-						<div className="text-base opacity-60">{"Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders."}</div>
+						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">Flow Friend</div>
+						<div className="text-sm sm:text-base opacity-60">{"Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders."}</div>
 					</div>
 					<img className="hidden sm:block flex-2 sm:ml-32 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
 				</div>
 				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
 					<img className="flex-2 dark:border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/pdf_crunch.jpeg" />
 					<div className="flex-3 sm:ml-32 mt-4 sm:mt-0">
-						<div className="text-xxl font-bold mb-2 sm:mb-4">Pdf Crunch</div>
-						<div className="text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
+						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">Pdf Crunch</div>
+						<div className="text-sm sm:text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
 					</div>
 				</div>
 			</div>

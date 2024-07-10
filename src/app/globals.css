@@ -495,3 +495,15 @@ aside p {
         transform: rotate(360deg) translateX(var(--translate-distance)) rotate(-360deg);
     }
 }
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-between{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

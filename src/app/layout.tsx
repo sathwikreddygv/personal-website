@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	title: "Sathwik Reddy | FullStack Developer",
 	description: "I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles. Feel free to explore and connect with me. Thanks for stopping by!",
 	icons: {
-	icon: '/images/sathwik-github.jpeg',
+	icon: '/icons/gv_logo.svg',
 	}
 };
 

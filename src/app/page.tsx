@@ -95,7 +95,7 @@ export default function Home() {
 						Say Hello! 👋🏼
 					</div>
 				</div>
-				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll">
+				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[20vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center xl:justify-center flex-col">
 					{/* <div className="circle flex items-center justify-center mt-48">
 						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>

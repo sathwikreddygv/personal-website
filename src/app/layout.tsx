@@ -67,6 +67,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={inter.className}>
+				<meta property="og:image" content="/images/opengraph-image.png" />
 				<link rel="icon" type="images/png" sizes="32x32" href="/image/sathwik.svg"/>
 				<Providers>
 					{/* <ActiveTabContext.Provider value={{active_tab, set_active_tab}}> */}

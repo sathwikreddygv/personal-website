@@ -65,15 +65,15 @@ export default function Home() {
 	// const refsArray = [ref1, ref2, ref3, ref4];
 
 	return (
-		<div className="relative mx-auto">
-			<div className="relative h-[90vh] sm:h-[100vh] bg-[#fed230] text-black">
+		<div className="relative mx-auto w-[100vw] 2xl:w-[100vw]">
+			<div className="relative h-[90vh] sm:h-[100vh] w-[100%] bg-[#fed230] text-black">
 				<svg viewBox="0 0 1440 320" className="absolute -bottom-1" xmlns="http://www.w3.org/2000/svg">
 					<path fill="#000000" d="
 						M0,10 C390,420 480,0 790,100 C1100,440 1200,0 1440,10 L1440,320 L0,320 Z
 					"></path>
 				</svg>
 				<div className={`relative z-10 p-8 flex items-center justify-center flex-col pt-32`}>
-					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between w-[100vw] -my-2">
+					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between -my-2 w-[100vw] 2xl:w-[100vw]">
 						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2"/>
 						<div className="flex-center pr-6">
 							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 " color={isScrolled ? 'white' : 'black'}/></a>
@@ -95,7 +95,7 @@ export default function Home() {
 						Say Hello! 👋🏼
 					</div>
 				</div>
-				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[20vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col">
+				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[23vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col">
 					{/* <div className="circle flex items-center justify-center mt-48">
 						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
@@ -257,7 +257,14 @@ export default function Home() {
 			{/* <svg width="100%" height="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
 				<path d="M 20,50 Q 100,10 180,50 Q 100,90 20,50 Z" fill="#171818" />
 			</svg> */}
-			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-16 border border-dashed rounded-large">
+			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16">
+				<img className="relative z-10 h-[40vh] sm:h-[50vh] 2xl:h-[40vh] w-256 ml-8 sm:ml-16 opacity-15" src="/images/Vector_1.svg" />
+				<div className="absolute max-w-[500px] z-20">
+					<div className="mb-2"><span className="text-[#fed230]">Crafting software</span> that prioritizes exceptional user experience brings me great joy.</div>
+					<div>I document my learnings through <span className="text-[#fed230]">Technical blogs</span>, simplifying complex concepts.</div>
+				</div>
+			</div>
+			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-8 sm:mt-16 border border-dashed rounded-large">
 				<div ref={refsArray[2]} className="text-xl" id='blogs-header'>Blogs</div>
 				<a className="flex mt-4 cp" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="dark:border-[hsla(0,0%,100%,.3)] border-2 w-24 h-16 mt-1 rounded-md" src="/images/godis.jpeg" />

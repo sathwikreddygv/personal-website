@@ -7,13 +7,34 @@ import { inter } from './fonts'
 import { useCallback, useContext, useEffect, useState } from "react";
 import { useElements } from "./elements";
 import { ActiveTabContext } from "@/contexts/ActiveTabContext";
+import Head from "next/head";
+import ogImage from './opengraph-image.png'
 
 export const metadata: Metadata = {
 	title: "Sathwik Reddy | FullStack Developer",
 	description: "I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles. Feel free to explore and connect with me. Thanks for stopping by!",
 	icons: {
 	icon: '/icons/gv_logo.svg',
-	}
+	},
+	metadataBase: new URL("https://sathwikreddygv.com"),
+	openGraph: {
+		images: [
+		{
+			url: ogImage.src,
+			width: ogImage.width,
+			height: ogImage.height
+		},
+		],
+	},
+	twitter: {
+		images: [
+		{
+			url: ogImage.src,
+			width: ogImage.width,
+			height: ogImage.height
+		},
+		]
+	},
 };
 
 export default function RootLayout({
@@ -67,7 +88,6 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={inter.className}>
-				<meta property="og:image" content="/images/opengraph-image.png" />
 				<link rel="icon" type="images/png" sizes="32x32" href="/image/sathwik.svg"/>
 				<Providers>
 					{/* <ActiveTabContext.Provider value={{active_tab, set_active_tab}}> */}

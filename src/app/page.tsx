@@ -95,7 +95,7 @@ export default function Home() {
 						Say Hello! 👋🏼
 					</div>
 				</div>
-				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[20vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center xl:justify-center flex-col">
+				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[20vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col">
 					{/* <div className="circle flex items-center justify-center mt-48">
 						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
@@ -249,7 +249,14 @@ export default function Home() {
 						<div className="text-sm sm:text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
 					</div>
 				</div>
+				<a href="https://github.com/sathwikreddygv" target="_blank" className="bg-[#fed230] rounded-lg p-4 flex-center mt-16 mx-auto shadow-gray-500 shadow-md hover:shadow-gray-600 hover:shadow-lg cp">
+					<div className="text-base sm:text-md mr-2 text-black">View More of my Projects</div>
+					<BsGithub className="w-6 h-6" color="black"/>
+				</a>
 			</div>
+			{/* <svg width="100%" height="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+				<path d="M 20,50 Q 100,10 180,50 Q 100,90 20,50 Z" fill="#171818" />
+			</svg> */}
 			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-16 border border-dashed rounded-large">
 				<div ref={refsArray[2]} className="text-xl" id='blogs-header'>Blogs</div>
 				<a className="flex mt-4 cp" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">

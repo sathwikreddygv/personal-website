@@ -95,7 +95,7 @@ export default function Home() {
 						Say Hello! 👋🏼
 					</div>
 				</div>
-				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-lg -bottom-[23vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col">
+				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-[18px] -bottom-[23vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col">
 					{/* <div className="circle flex items-center justify-center mt-48">
 						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
@@ -106,7 +106,7 @@ export default function Home() {
 						<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
 						<div className={`text-white text-base`}>My Tech Stack</div>
 					</div> */}
-					<div className="text-white text-center mb-4">My Tech Stack</div>
+					<div className="text-white text-center mb-4 mt-2">My Tech Stack</div>
 					<div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
 						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
 							<img className="h-12 w-12" src="/icons/javascript.svg" />

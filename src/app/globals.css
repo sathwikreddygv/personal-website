@@ -29,7 +29,7 @@
 
 body {
 position: relative;
-  color: rgb(var(--foreground));
+  color: white;
   background: black
 }
 

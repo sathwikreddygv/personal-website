@@ -76,11 +76,11 @@ export default function Home() {
 					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between -my-2 w-[100vw] 2xl:w-[100vw]">
 						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2"/>
 						<div className="flex-center pr-6">
-							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 " color={isScrolled ? 'white' : 'black'}/></a>
-							<a target="_blank" href="https://x.com/sathwikreddygv7" className="text-sm flex items-center"><BsTwitterX className="w-5 h-5 cp mr-4" color={isScrolled ? 'white' : 'black'}/></a>
+							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
+							<a target="_blank" href="https://x.com/sathwikreddygv7" className="text-sm flex items-center"><BsTwitterX className="w-5 h-5 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
 							{/* <BsLinkedin className="w-6 h-6 cp mr-4"/> */}
-							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 mr-4"/></a>
-							<a target="_blank" href="https://sathwikreddygv.blog" className="text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 "/></a>
+							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 mr-4 transition-transform duration-500 transform hover:rotate-360"/></a>
+							<a target="_blank" href="https://sathwikreddygv.blog" className="text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 transition-transform duration-500 transform hover:rotate-360"/></a>
 						</div>
 					</div>
 					<div className="text-xl sm:text-[42px] sm:leading-normal text-[#141309] font-bold text-center mb-4">
@@ -91,11 +91,11 @@ export default function Home() {
 						<div ref={refsArray[0]} id='about-header'>{"I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles."}</div>
 						<div className="mt-2">Feel free to explore and connect with me. Thanks for stopping by!</div>
 					</div>
-					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp shadow-lg hover:shadow-xl" onClick={() => window.open("https://x.com/sathwikreddygv7")}>
+					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp fancy-button" onClick={() => window.open("https://x.com/sathwikreddygv7")}>
 						Say Hello! 👋🏼
 					</div>
 				</div>
-				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-[18px] -bottom-[23vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col">
+				<div className="w-3/4 sm:w-1/2 h-[50vh] bg-[#110f12] absolute rounded-[18px] -bottom-[23vh] sm:-bottom-[15vh] left-1/2 -translate-x-1/2 p-4 overflow-scroll flex items-center 2xl:justify-center flex-col layered-shadow-nt-lg">
 					{/* <div className="circle flex items-center justify-center mt-48">
 						<div className="item"><img className="h-12 w-12" src="/icons/javascript.svg" /></div>
 						<div className="item"><img className="h-14 w-14" src="/icons/react.svg" /></div>
@@ -106,47 +106,47 @@ export default function Home() {
 						<div className="item"><img className="h-20 w-20" src="/icons/go.svg" /></div>
 						<div className={`text-white text-base`}>My Tech Stack</div>
 					</div> */}
-					<div className="text-white text-center mb-4 mt-2">My Tech Stack</div>
+					<div className="text-white text-center mb-4 mt-2 ">My Tech Stack</div>
 					<div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/javascript.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/javascript.svg" />
 							<div className="text-white mt-4 text-base text-center" >Javascript</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/react.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/react.svg" />
 							<div className="text-white mt-4 text-base text-center" >ReactJS</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/tailwind.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/tailwind.svg" />
 							<div className="text-white mt-4 text-base text-center" >Tailwind</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/node.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/node.svg" />
 							<div className="text-white mt-4 text-base text-center" >NodeJS</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/redis.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/redis.svg" />
 							<div className="text-white mt-4 text-base text-center" >Redis</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-14 w-14" src="/icons/mysql.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-14 w-14 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/mysql.svg" />
 							<div className="text-white mt-2 text-base text-center" >MySQL</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-14 w-14" src="/icons/golang-icon.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-14 w-14 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/golang-icon.svg" />
 							<div className="text-white mt-2 text-base text-center" >Go</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/next.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/next.svg" />
 							<div className="text-white mt-4 text-base text-center" >NextJS</div>
 						</div>
-						<div className="hidden sm:block invisible col-span-1 bg-[#29272a] rounded-lg p-4 sm:flex-center flex-col"></div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/expressjs.svg" />
+						<div className="hidden sm:block invisible col-span-1 bg-[#29272a] rounded-lg p-4 sm:flex-center flex-col transition-transform duration-500 transform hover:scale-90 cp"></div>
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/expressjs.svg" />
 							<div className="text-white mt-4 text-base text-center" >ExpressJS</div>
 						</div>
-						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col">
-							<img className="h-12 w-12" src="/icons/github-white.svg" />
+						<div className="col-span-1 bg-[#29272a] rounded-lg p-4 flex-center flex-col group transition-transform duration-500 transform hover:scale-90 cp">
+							<img className="h-12 w-12 transition-transform duration-500 transform group-hover:rotate-360" src="/icons/github-white.svg" />
 							<div className="text-white mt-4 text-base text-center" >Github</div>
 						</div>
 					</div>
@@ -227,29 +227,29 @@ export default function Home() {
 						</div>
 					</div>
 				</div> */}
-				<div className="flex items-center flex-wrap sm:flex-nowrap">
-					<img className="flex-2 border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/godis.jpeg" />
+				<div className="flex items-center group flex-wrap sm:flex-nowrap">
+					<img className="flex-2 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/godis.jpeg" />
 					<div className="flex-3 text-white sm:ml-32 mt-4 sm:mt-0">
 						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">GodisDB</div>
 						<div className="text-sm sm:text-base opacity-60">{"GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli."}</div>
 					</div>
 				</div>
-				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
-					<img className="sm:hidden flex-2 sm:ml-32 border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
+				<div className="flex items-center group flex-wrap sm:flex-nowrap mt-16">
+					<img className="sm:hidden flex-2 sm:ml-32 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/flow_friend.jpeg" />
 					<div className="flex-3 text-white mt-4 sm:mt-0">
 						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">Flow Friend</div>
 						<div className="text-sm sm:text-base opacity-60">{"Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders."}</div>
 					</div>
-					<img className="hidden sm:block flex-2 sm:ml-32 border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/flow_friend.jpeg" />
+					<img className="hidden sm:block flex-2 sm:ml-32 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/flow_friend.jpeg" />
 				</div>
-				<div className="flex items-center flex-wrap sm:flex-nowrap mt-16">
-					<img className="flex-2 border-[hsla(0,0%,100%,.3)] border-2 group-hover:blur-md w-80 h-48 rounded-lg " src="/images/pdf_crunch.jpeg" />
+				<div className="flex items-center group flex-wrap sm:flex-nowrap mt-16">
+					<img className="flex-2 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/pdf_crunch.jpeg" />
 					<div className="flex-3 text-white sm:ml-32 mt-4 sm:mt-0">
 						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">Pdf Crunch</div>
 						<div className="text-sm sm:text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
 					</div>
 				</div>
-				<a href="https://github.com/sathwikreddygv" target="_blank" className="bg-[#fed230] rounded-lg p-4 flex-center mt-16 mx-auto shadow-gray-500 shadow-md hover:shadow-gray-600 hover:shadow-lg cp">
+				<a href="https://github.com/sathwikreddygv" target="_blank" className="bg-[#fed230] rounded-lg p-4 flex-center mt-16 mx-auto shadow-gray-500 shadow-md hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
 					<div className="text-base sm:text-md mr-2 text-black">View More of my Projects</div>
 					<BsGithub className="w-6 h-6" color="black"/>
 				</a>
@@ -257,14 +257,14 @@ export default function Home() {
 			{/* <svg width="100%" height="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
 				<path d="M 20,50 Q 100,10 180,50 Q 100,90 20,50 Z" fill="#171818" />
 			</svg> */}
-			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16">
-				<img className="relative z-10 h-[40vh] sm:h-[50vh] 2xl:h-[40vh] w-256 ml-8 sm:ml-16 opacity-15" src="/images/Vector_1.svg" />
+			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16 group">
+				<img className="relative z-10 h-[40vh] sm:h-[50vh] 2xl:h-[40vh] w-256 ml-8 sm:ml-16 opacity-10 transition-transform duration-700 transform group-hover:rotate-180" src="/images/Vector_2.svg" />
 				<div className="absolute max-w-[500px] z-20">
 					<div className="mb-2"><span className="text-[#fed230]">Crafting software</span> that prioritizes exceptional user experience brings me great joy.</div>
 					<div>I document my learnings through <span className="text-[#fed230]">Technical blogs</span>, simplifying complex concepts.</div>
 				</div>
 			</div>
-			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-8 sm:mt-16 border border-dashed rounded-large">
+			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-8 sm:mt-16 rounded-large" style={{boxShadow:'box-shadow: 10px 10px 15px white;'}}>
 				<div ref={refsArray[2]} className="text-xl" id='blogs-header'>Blogs</div>
 				<a className="flex mt-4 cp" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="border-[hsla(0,0%,100%,.3)] border-2 w-24 h-16 mt-1 rounded-md" src="/images/godis.jpeg" />

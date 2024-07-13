@@ -14,7 +14,15 @@ module.exports = {
 	],
 	darkMode: "class",
 	theme: {
-		extend: {},
+		extend: {
+			rotate: {
+				'30': '30deg',
+				'60': '60deg',
+				'90': '90deg',
+				'180': '180deg',
+				'360': '360deg',
+			  },
+		},
 		fontSize: {
 			xs: ['12px', '18px'],
 			sm: ['14px', '20px'],

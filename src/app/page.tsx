@@ -376,9 +376,9 @@ export default function Home() {
 							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="group mt-4 text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 							<a target="_blank" href="https://sathwikreddygv.blog" className="group mt-4 text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 						</div>
-						<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mx-8" />
+						<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mx-8 sm:ml-32" />
 					</div>
-					<a href="mailto:sathwikreddygv@gmail.com" className="mt-4 flex-center text-base border border-black px-4 py-3 rounded-lg cp fancy-button transition-transform duration-500 transform hover:rotate-1" >
+					<a href="mailto:sathwikreddygv@gmail.com" className="mt-6 flex-center text-base border border-black px-4 py-3 rounded-lg cp fancy-button transition-transform duration-500 transform hover:rotate-1" >
 						<div>Hire me </div>
 						<img src="/icons/gmail.svg" className="ml-2 w-4 h-4" />
 					</a>

@@ -360,7 +360,8 @@ export default function Home() {
 			</div>
 			<div className="flex-center">
 				<a href="https://sathwikreddygv.blog" target="_blank" className="group rounded-lg p-4 flex-center mx-auto hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
-					<div className="text-base sm:text-md mr-2 text-white">Visit <span className="font-bold text-[#fed230]">sathwikreddygv.blog</span></div>
+					<div className="text-base sm:text-md mr-2 text-white">View more blogs</div>
+					<BsArrowRight className="w-6 h-6 mr-2" />
 					<img src="/icons/hashnode.svg" className="w-6 h-6 transform transition-transform duration-500 group-hover:rotate-360" />
 				</a>
 			</div>

@@ -16,6 +16,7 @@ module.exports = {
 	theme: {
 		extend: {
 			rotate: {
+				'15': '15deg',
 				'30': '30deg',
 				'60': '60deg',
 				'90': '90deg',

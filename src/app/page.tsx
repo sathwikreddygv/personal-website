@@ -257,14 +257,14 @@ export default function Home() {
 			{/* <svg width="100%" height="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
 				<path d="M 20,50 Q 100,10 180,50 Q 100,90 20,50 Z" fill="#171818" />
 			</svg> */}
-			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16 group">
+			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16 mb-16 sm:mb-32 group">
 				<img className="relative z-10 h-[40vh] sm:h-[50vh] 2xl:h-[40vh] w-256 ml-8 sm:ml-16 opacity-10 transition-transform duration-700 transform group-hover:rotate-180" src="/images/Vector_2.svg" />
 				<div className="absolute max-w-[500px] z-20">
 					<div className="mb-2"><span className="text-[#fed230]">Crafting software</span> that prioritizes exceptional user experience brings me great joy.</div>
 					<div>I document my learnings through <span className="text-[#fed230]">Technical blogs</span>, simplifying complex concepts.</div>
 				</div>
 			</div>
-			<div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-8 sm:mt-16 rounded-large" style={{boxShadow:'box-shadow: 10px 10px 15px white;'}}>
+			{/* <div className="p-4 mx-4 sm:mx-16 md:mx-32 mt-8 sm:mt-16 rounded-large" style={{boxShadow:'box-shadow: 10px 10px 15px white;'}}>
 				<div ref={refsArray[2]} className="text-xl" id='blogs-header'>Blogs</div>
 				<a className="flex mt-4 cp" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="border-[hsla(0,0%,100%,.3)] border-2 w-24 h-16 mt-1 rounded-md" src="/images/godis.jpeg" />
@@ -303,6 +303,42 @@ export default function Home() {
 				</a>
 
 				<div className="text-center mt-6 mb-2 text-md">View more at <a href="https://sathwikreddygv.blog" target="_blank" className="underline text-[#0078ff]">https://sathwikreddygv.blog</a></div>
+			</div> */}
+			<div className="container mb-32 min-w-[100vw]">
+				<a className="flex mt-4 cp glass p-6 flex-col max-w-[300px] max-h-[400px] -rotate-12" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
+					<img className="border-[hsla(0,0%,100%,.3)] border-2  mt-1 rounded-md" src="/images/godis.jpeg" />
+					<div className="flex-1 min-w-0 flex flex-col pt-4">
+						<div className="text-base">
+							Building my own Redis in Go - Part 1
+						</div>
+						<div className="text-sm opacity-50 mt-1">
+							{"Introduction I've always wanted to understand how Redis works internally and how its features are built. So, I decided to create my own version of Redis, but in Go (Redis is actually built in C)..."}
+						</div>
+					</div>
+				</a>
+				<a className="flex mt-4 cp glass p-6 flex-col max-w-[300px] max-h-[400px] rotate-6" target="_blank" href="https://sathwikreddygv.blog/understanding-scroll-driven-animations-in-css">
+					<img className="border-[hsla(0,0%,100%,.3)] border-2  mt-1 rounded-md" src="/images/blog3.avif" />
+					<div className="flex-1 min-w-0 flex flex-col pt-4">
+						<div className="text-base">
+							Understanding Scroll Driven Animations in CSS
+						</div>
+						<div className="text-sm opacity-50 mt-1">
+						{"Scroll-driven animations are 'animations that are triggered as the user scrolls through a webpage,' according to ChatGPT. I always wanted to build a personal website with cool scroll-based animations..."}
+						</div>
+					</div>
+				</a>
+				<hr className="opacity-50 my-4"/>
+				<a className="flex mt-4 cp glass p-6 flex-col max-w-[300px] max-h-[400px] rotate-15" target="_blank" href="https://sathwikreddygv.blog/wtf-is-an-event-loop-in-javascript">
+					<img className="border-[hsla(0,0%,100%,.3)] border-2  mt-1 rounded-md" src="/images/blog2.avif" />
+					<div className="flex-1 min-w-0 flex flex-col pt-4">
+						<div className="text-base">
+							WTF is an event loop in Javascript
+						</div>
+						<div className="text-sm opacity-50 mt-1">
+						{"You probably already know that JavaScript is a single-threaded language as you read this blog. However, JavaScript can carry out asynchronous actions that may appear to be occurring in ..."}
+						</div>
+					</div>
+				</a>
 			</div>
 			<div className="mt-16 flex flex-col items-center justify-center mb-32">
 				<div ref={refsArray[3]} className="text-base mb-2" id='contact-header'>You can find me on X and Linkedin as well!</div>

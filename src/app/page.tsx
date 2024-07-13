@@ -9,7 +9,7 @@ import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { HiExternalLink } from "react-icons/hi";
 import { LuExternalLink } from "react-icons/lu";
-import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter, BsTwitterX, BsX } from "react-icons/bs";
+import { BsArrowRight, BsGithub, BsLinkedin, BsMailbox, BsMailbox2Flag, BsMailboxFlag, BsTwitter, BsTwitterX, BsX } from "react-icons/bs";
 import { useCallback, useContext, useEffect, useState } from "react";
 import useIntersectionObserver from "@/components/IntersectionObserver";
 import { useElements } from "./elements";
@@ -74,7 +74,7 @@ export default function Home() {
 				</svg>
 				<div className={`relative z-10 p-8 flex items-center justify-center flex-col pt-32`}>
 					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between -my-2 w-[100vw] 2xl:w-[100vw]">
-						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2"/>
+						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2 transform transition-transform duration-500 hover:rotate-360"/>
 						<div className="flex-center pr-6">
 							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
 							<a target="_blank" href="https://x.com/sathwikreddygv7" className="text-sm flex items-center"><BsTwitterX className="w-5 h-5 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
@@ -91,7 +91,7 @@ export default function Home() {
 						<div ref={refsArray[0]} id='about-header'>{"I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles."}</div>
 						<div className="mt-2">Feel free to explore and connect with me. Thanks for stopping by!</div>
 					</div>
-					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp fancy-button" onClick={() => window.open("https://x.com/sathwikreddygv7")}>
+					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp fancy-button transition-transform duration-500 transform hover:rotate-1" onClick={() => window.open("https://x.com/sathwikreddygv7")}>
 						Say Hello! 👋🏼
 					</div>
 				</div>
@@ -249,9 +249,9 @@ export default function Home() {
 						<div className="text-sm sm:text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
 					</div>
 				</div>
-				<a href="https://github.com/sathwikreddygv" target="_blank" className="bg-[#fed230] rounded-lg p-4 flex-center mt-16 mx-auto shadow-gray-500 shadow-md hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
+				<a href="https://github.com/sathwikreddygv" target="_blank" className="group bg-[#fed230] rounded-lg p-4 flex-center mt-16 mb-8 mx-auto shadow-gray-500 shadow-md hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
 					<div className="text-base sm:text-md mr-2 text-black">View More of my Projects</div>
-					<BsGithub className="w-6 h-6" color="black"/>
+					<BsGithub className="w-6 h-6 transform transition-transform duration-500 group-hover:rotate-360" color="black"/>
 				</a>
 			</div>
 			{/* <svg width="100%" height="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
@@ -304,7 +304,7 @@ export default function Home() {
 
 				<div className="text-center mt-6 mb-2 text-md">View more at <a href="https://sathwikreddygv.blog" target="_blank" className="underline text-[#0078ff]">https://sathwikreddygv.blog</a></div>
 			</div> */}
-			<div className="container mb-32 min-w-[100vw] overflow-hidden py-8">
+			<div className="container mb-8 min-w-[100vw] overflow-hidden py-8">
 				<a className="flex mt-4 cp glass p-6 flex-col max-w-[300px] max-h-[400px] -rotate-12" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="border-[hsla(0,0%,100%,.3)] border-2  mt-1 rounded-md" src="/images/godis.jpeg" />
 					<div className="flex-1 min-w-0 flex flex-col pt-4">
@@ -340,16 +340,29 @@ export default function Home() {
 					</div>
 				</a>
 			</div>
-			<div className="mt-16 flex flex-col items-center justify-center mb-32">
-				<div ref={refsArray[3]} className="text-base mb-2" id='contact-header'>You can find me on X and Linkedin as well!</div>
-				<div className="flex items-center justify-center">
-					<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mr-12" />
-					<div>
-						<a target="_blank" href="https://x.com/sathwikreddygv7" className="mt-4 text-sm flex items-center"><img src="/icons/twitter.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv7</a>
-						<a target="_blank" href="https://github.com/sathwikreddygv" className="mt-4 text-sm flex items-center"><BsGithub className="w-6 h-6"/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
-						<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="mt-4 text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
-						<a target="_blank" href="https://sathwikreddygv.blog" className="mt-4 text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+			<div className="flex-center">
+				<a href="https://github.com/sathwikreddygv" target="_blank" className="group rounded-lg p-4 flex-center mx-auto hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
+					<div className="text-base sm:text-md mr-2 text-white">Visit <span className="font-bold text-[#fed230]">sathwikreddygv.blog</span></div>
+					<img src="/icons/hashnode.svg" className="w-6 h-6 transform transition-transform duration-500 group-hover:rotate-360" />
+				</a>
+			</div>
+			<div className="flex-center mx-4">
+				<div className="mt-16 flex-center flex-col mb-4 rounded-lg py-6 px-8 bg-[#fed230] text-black">
+					<div ref={refsArray[3]} className="text-lg mb-2 font-bold" id='contact-header'>Connect with me!</div>
+					<div className="flex items-center justify-between">
+						<div className="text-base mt-2">
+							{/* You can find me on X(Twitter) and Linkedin as well! */}
+							<a target="_blank" href="https://x.com/sathwikreddygv7" className="group mt-4 text-sm flex items-center"><img src="/icons/twitter.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv7</a>
+							<a target="_blank" href="https://github.com/sathwikreddygv" className="group mt-4 text-sm flex items-center"><BsGithub className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360"/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="group mt-4 text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+							<a target="_blank" href="https://sathwikreddygv.blog" className="group mt-4 text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
+						</div>
+						<img src="/images/sathwik-github.jpeg" className="rounded-full h-24 w-24 mt-4 mx-8" />
 					</div>
+					<a href="mailto:sathwikreddygv@gmail.com" className="mt-4 flex-center text-base border border-black px-4 py-3 rounded-lg cp fancy-button transition-transform duration-500 transform hover:rotate-1" >
+						<div>Hire me </div>
+						<img src="/icons/gmail.svg" className="ml-2 w-4 h-4" />
+					</a>
 				</div>
 			</div>
 		</div>

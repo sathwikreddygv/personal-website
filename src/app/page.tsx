@@ -304,7 +304,7 @@ export default function Home() {
 
 				<div className="text-center mt-6 mb-2 text-md">View more at <a href="https://sathwikreddygv.blog" target="_blank" className="underline text-[#0078ff]">https://sathwikreddygv.blog</a></div>
 			</div> */}
-			<div className="container mb-32 min-w-[100vw]">
+			<div className="container mb-32 min-w-[100vw] overflow-hidden py-8">
 				<a className="flex mt-4 cp glass p-6 flex-col max-w-[300px] max-h-[400px] -rotate-12" target="_blank" href="https://sathwikreddygv.blog/building-my-own-redis-in-go-part-1">
 					<img className="border-[hsla(0,0%,100%,.3)] border-2  mt-1 rounded-md" src="/images/godis.jpeg" />
 					<div className="flex-1 min-w-0 flex flex-col pt-4">

@@ -230,14 +230,24 @@ export default function Home() {
 				<div className="flex items-center group flex-wrap sm:flex-nowrap">
 					<img className="flex-2 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/godis.jpeg" />
 					<div className="flex-3 text-white sm:ml-32 mt-4 sm:mt-0">
-						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">GodisDB</div>
+						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4 flex items-center">
+							<div>GodisDB</div>
+							<a href="https://github.com/sathwikreddygv/redis-written-in-go" target="_blank">
+								<BsGithub color="white" className="w-6 h-6 sm:w-7 sm:h-7 ml-3 transition-transform duration-500 transform hover:rotate-15 cp"/>
+							</a>
+						</div>
 						<div className="text-sm sm:text-base opacity-60">{"GodisDB is a Redis-like in-memory key-value Database but multithreaded unlike Redis. It supports a lot of Redis commands and can also be connected through redis-cli."}</div>
 					</div>
 				</div>
 				<div className="flex items-center group flex-wrap sm:flex-nowrap mt-16">
 					<img className="sm:hidden flex-2 sm:ml-32 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/flow_friend.jpeg" />
 					<div className="flex-3 text-white mt-4 sm:mt-0">
-						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">Flow Friend</div>
+						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4 flex items-center">
+							<div>Flow Friend</div>
+							<a href="https://github.com/sathwikreddygv/whatsapp-period-tracking-bot" target="_blank">
+								<BsGithub color="white" className="w-6 h-6 sm:w-7 sm:h-7 ml-3 transition-transform duration-500 transform hover:rotate-15 cp"/>
+							</a>
+						</div>
 						<div className="text-sm sm:text-base opacity-60">{"Flow Friend is a Period Tracking Whatsapp Bot for Women. It is designed to help users track their menstrual cycles. The bot provides features such as period tracking and reminders."}</div>
 					</div>
 					<img className="hidden sm:block flex-2 sm:ml-32 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/flow_friend.jpeg" />
@@ -245,7 +255,15 @@ export default function Home() {
 				<div className="flex items-center group flex-wrap sm:flex-nowrap mt-16">
 					<img className="flex-2 border-[hsla(0,0%,100%,.3)] border-2 w-80 h-48 rounded-lg transition-transform duration-500 transform group-hover:scale-95 " src="/images/pdf_crunch.jpeg" />
 					<div className="flex-3 text-white sm:ml-32 mt-4 sm:mt-0">
-						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4">Pdf Crunch</div>
+						<div className="text-xl sm:text-xxl font-bold mb-2 sm:mb-4 flex items-center">
+							<div>Pdf Crunch</div>
+							<a href="https://github.com/sathwikreddygv/pdf-crunch" target="_blank">
+								<BsGithub color="white" className="w-6 h-6 sm:w-7 sm:h-7 ml-3 transition-transform duration-500 transform hover:rotate-15 cp"/>
+							</a>
+							<a href="https://pdf-compressor-vercel.vercel.app/" target="_blank">
+								<img src="/icons/web.svg" className="w-6 h-6 sm:w-7 sm:h-7 ml-3 transition-transform duration-500 transform hover:rotate-15 cp"/>
+							</a>
+						</div>
 						<div className="text-sm sm:text-base opacity-60">{"Pdf Crunch is an In-browser PDF Compressor designed to reduce the size of your PDF documents, making it easier to share and store documents."} </div>
 					</div>
 				</div>
@@ -341,7 +359,7 @@ export default function Home() {
 				</a>
 			</div>
 			<div className="flex-center">
-				<a href="https://github.com/sathwikreddygv" target="_blank" className="group rounded-lg p-4 flex-center mx-auto hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
+				<a href="https://sathwikreddygv.blog" target="_blank" className="group rounded-lg p-4 flex-center mx-auto hover:shadow-gray-600 cp transition-transform duration-500 transform hover:scale-95">
 					<div className="text-base sm:text-md mr-2 text-white">Visit <span className="font-bold text-[#fed230]">sathwikreddygv.blog</span></div>
 					<img src="/icons/hashnode.svg" className="w-6 h-6 transform transition-transform duration-500 group-hover:rotate-360" />
 				</a>

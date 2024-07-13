@@ -341,7 +341,7 @@ export default function Home() {
 							Understanding Scroll Driven Animations in CSS
 						</div>
 						<div className="text-sm opacity-50 mt-1">
-						{"Scroll-driven animations are 'animations that are triggered as the user scrolls through a webpage,' according to ChatGPT. I always wanted to build a personal website with cool scroll-based animations..."}
+						{"Scroll-driven animations are 'animations that are triggered as the user scrolls through a webpage,' according to ChatGPT. I always wanted to build a personal website with cool scroll-based..."}
 						</div>
 					</div>
 				</a>

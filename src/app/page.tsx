@@ -73,7 +73,7 @@ export default function Home() {
 					"></path>
 				</svg>
 				<div className={`relative z-10 p-8 flex items-center justify-center flex-col pt-32`}>
-					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between -my-2 w-[100vw] 2xl:w-[100vw]">
+					<div style={{backdropFilter:'blur(10px)', WebkitBackdropFilter:'blur(10px)'}} className="fixed top-0 bg-transparent flex-between -my-2 w-[100vw] 2xl:w-[100vw] z-10">
 						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2 transform transition-transform duration-500 hover:rotate-360"/>
 						<div className="flex-center pr-6">
 							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>

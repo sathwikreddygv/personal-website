@@ -275,7 +275,7 @@ export default function Home() {
 			{/* <svg width="100%" height="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
 				<path d="M 20,50 Q 100,10 180,50 Q 100,90 20,50 Z" fill="#171818" />
 			</svg> */}
-			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16 mb-16 sm:mb-32 group">
+			<div className="relative font-bold text-lg sm:text-[28px] leading-normal flex-center mx-9 sm:my-16 mb-16 sm:mb-32 group" style={{zIndex:1}}>
 				<img className="relative z-10 h-[40vh] sm:h-[50vh] 2xl:h-[40vh] w-256 ml-8 sm:ml-16 opacity-10 transition-transform duration-700 transform group-hover:rotate-180" src="/images/Vector_2.svg" />
 				<div className="absolute max-w-[500px] z-20">
 					<div className="mb-2"><span className="text-[#fed230]">Crafting software</span> that prioritizes exceptional user experience brings me great joy.</div>

@@ -77,7 +77,7 @@ export default function Home() {
 						<img src={isScrolled ? "/icons/gv_logo_white.svg" : "/icons/gv_logo.svg"} className="w-24 h-24 -mx-2 transform transition-transform duration-500 hover:rotate-360"/>
 						<div className="flex-center pr-6">
 							<a target="_blank" href="https://github.com/sathwikreddygv" className="text-sm flex items-center"><BsGithub className="w-6 h-6 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
-							<a target="_blank" href="https://x.com/sathwikreddygv7" className="text-sm flex items-center"><BsTwitterX className="w-5 h-5 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
+							<a target="_blank" href="https://x.com/sathwikreddygv" className="text-sm flex items-center"><BsTwitterX className="w-5 h-5 cp mr-4 transition-transform duration-500 transform hover:rotate-360" color={isScrolled ? 'white' : 'black'}/></a>
 							{/* <BsLinkedin className="w-6 h-6 cp mr-4"/> */}
 							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 mr-4 transition-transform duration-500 transform hover:rotate-360"/></a>
 							<a target="_blank" href="https://sathwikreddygv.blog" className="text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 transition-transform duration-500 transform hover:rotate-360"/></a>
@@ -91,7 +91,7 @@ export default function Home() {
 						<div ref={refsArray[0]} id='about-header'>{"I'm a Software developer from India. Here, you'll find my projects, blogs and social profiles."}</div>
 						<div className="mt-2">Feel free to explore and connect with me. Thanks for stopping by!</div>
 					</div>
-					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp fancy-button transition-transform duration-500 transform hover:rotate-1" onClick={() => window.open("https://x.com/sathwikreddygv7")}>
+					<div className="mt-14 sm:mt-16 border border-black px-4 py-3 rounded-lg cp fancy-button transition-transform duration-500 transform hover:rotate-1" onClick={() => window.open("https://x.com/sathwikreddygv")}>
 						Say Hello! 👋🏼
 					</div>
 				</div>
@@ -371,7 +371,7 @@ export default function Home() {
 					<div className="flex items-center justify-between">
 						<div className="text-base mt-2">
 							{/* You can find me on X(Twitter) and Linkedin as well! */}
-							<a target="_blank" href="https://x.com/sathwikreddygv7" className="group mt-4 text-sm flex items-center"><img src="/icons/twitter.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv7</a>
+							<a target="_blank" href="https://x.com/sathwikreddygv" className="group mt-4 text-sm flex items-center"><img src="/icons/twitter.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 							<a target="_blank" href="https://github.com/sathwikreddygv" className="group mt-4 text-sm flex items-center"><BsGithub className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360"/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 							<a target="_blank" href="https://linkedin.com/in/sathwikreddygv" className="group mt-4 text-sm flex items-center"><img src="/icons/linkedin.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
 							<a target="_blank" href="https://sathwikreddygv.blog" className="group mt-4 text-sm flex items-center"><img src="/icons/hashnode.svg" className="w-6 h-6 transition-transform duration-500 transform group-hover:rotate-360 "/> <div><BsArrowRight strokeWidth={1} className="mx-2"/></div> @sathwikreddygv</a>
